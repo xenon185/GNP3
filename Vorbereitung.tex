@@ -119,5 +119,14 @@ H_{HP} (j \omega) &= \frac{R_{0}}{R_{a}} \cdot \frac{ 	\frac{R_{f} }{R_{d}} \cdo
 \noindent Aus der Allgemeinen Gleichung eines Hochpassfilter 2. Ordnung können so die Parameter $a_{1}, b_{1}~und~V_{0}$ zugewiesen werden. $V_{\infty}$ ist die maximale Verstärkung bei $\omega -> \infty$.
 
 \begin{alignat}{2}
-\frac{V_{\infty} \cdot \frac{1}{b_{1}} \cdot (j \omega)^2}{1 + \frac{a_{1}}{b_{1}} \cdot j \omega + \frac{1}{b_{1}} \cdot \left ( j \omega \right)^2} &= \frac{R_{0}}{R_{a}} \cdot \frac{1}{1+\frac{R_{0}}{R_{e}} \cdot  \left(j \omega \tau \right) + \frac{R_{0}}{R_{d}} \cdot \left ( j \omega \tau \right)^2}
+V_{\infty} \cdot \frac{ \frac{1}{b_{1}} \cdot (j \omega)^2}{1 + \frac{a_{1}}{b_{1}} \cdot j \omega + \frac{1}{b_{1}} \cdot \left ( j \omega \right)^2} &= \frac{R_{0}}{R_{a}} \cdot \frac{ \frac{R_{f} }{R_{0}} \cdot \left( j \omega \tau \right)^2  }{1+\frac{R_{f} \cdot R_{0}}{R_{0} \cdot R_{e}} \cdot  \left(j \omega \tau \right) + \frac{R_{0}}{R_{d}} \cdot \left ( j \omega \tau \right)^2}
+\end{alignat}
+
+\begin{alignat}{2}
+V_{\infty} &= \frac{R_{0}}{R_{a}}\\
+b_{1} &= \frac{R_{0}}{R_{f}} \cdot \frac{1}{\tau^2}\\
+\frac{a_{1}}{b_{1}} &= \frac{R_{f} \cdot R_{0}}{R_{0} \cdot R_{e}} \cdot \tau\\
+a_{1} &= \frac{R_{f} \cdot R_{0}}{R_{0} \cdot R_{e} } \cdot \tau \cdot b_{1}\\
+&\Rightarrow \frac{R_{f} \cdot R_{0}}{R_{0} \cdot R_{e} } \cdot \tau \cdot \frac{R_{0}}{R_{f}} \cdot \frac{1}{\tau^2}\\
+&\Rightarrow \frac{R_{0}}{R_{e}} \cdot \frac{1}{\tau}
 \end{alignat}
