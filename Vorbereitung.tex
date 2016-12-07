@@ -80,21 +80,21 @@ w_{g4} &= -\sqrt{x2}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.3\linewidth]{Bilder/TP_Butterworth}
+\includegraphics[width=0.7\linewidth]{Bilder/TP_Butterworth}
 \caption{}
 \label{fig:TP_Butterworth}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.3\linewidth]{Bilder/TP_Tschebyscheff}
+\includegraphics[width=0.7\linewidth]{Bilder/TP_Tschebyscheff}
 \caption{}
 \label{fig:TP_Tschebyscheff}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.3\linewidth]{Bilder/TP_Bessel}
+\includegraphics[width=0.7\linewidth]{Bilder/TP_Bessel}
 \caption{}
 \label{fig:TP_Bessel}
 \end{figure}
@@ -187,21 +187,91 @@ w_{g4} &= -\sqrt{x2}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\linewidth]{Bilder/HP_Butterworth}
+	\includegraphics[width=0.7\linewidth]{Bilder/HP_Butterworth}
 	\caption{}
 	\label{fig:HP_Butterworth}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\linewidth]{Bilder/HP_Tschebyscheff}
+	\includegraphics[width=0.7\linewidth]{Bilder/HP_Tschebyscheff}
 	\caption{}
 	\label{fig:HP_Tschebyscheff}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\linewidth]{Bilder/HP_Bessel}
+	\includegraphics[width=0.7\linewidth]{Bilder/HP_Bessel}
 	\caption{}
 	\label{fig:HP_Bessel}
 \end{figure}
+
+\newpage
+
+\subsubsection{Bandpassfilter}
+
+Die vereinfachte Formel für den Bandpassfilter hergeleitet vom Universalfilter kann der Allgemeinen Übertragungsfunktion eine Bandpassen gleichgesetzt und so die Parameter bestimmt werden.
+
+
+\begin{alignat}{2}
+H_{BP}(j\omega) = V_{max} \cdot \frac{A \cdot j\omega}{1 + A \cdot j \omega + b \cdot (j\omega)^2} \Longleftrightarrow - \frac{R_{0}}{R_{a}} \cdot \frac{\frac{R_{0}}{R_{C}} \cdot (j\omega \tau)}{1 + \frac{R_{0}}{R_{c}} \cdot (j\omega \tau) + (j\omega \tau)^2}
+\end{alignat}
+
+Dadurch ergeben sich die nachfolgenden Parameter:
+
+\begin{alignat}{2}
+A &= \frac{R_{0}}{R_{c}}\\
+b &= \tau^2\\
+V_{max} &= - \frac{R_{0}}{R_{a}}
+\end{alignat}
+
+\noindent Das Maximum des Bandpassfilter wird erreicht wenn der Imaginärteil des Nenner = 0 ist. Somit entspricht $V_{max}$ dem erreichbaren Maximum. An diesem Punkt befindet sich die Mittenfrequenz $f_{0}$. 
+
+\begin{alignat}{2}
+H_{BP}(jw) &= V_{max} \cdot \frac{1}{\frac{1}{j\omega \cdot A} + 1 + \frac{j\omega \cdot b }{A}}\\
+&\Rightarrow V_{max} \cdot \frac{1}{1 + j \left(\frac{b}{A}\cdot \omega - \frac{1}{A \cdot \omega} \right)}
+\end{alignat}
+
+\begin{alignat}{2}
+	0 &= \frac{b}{A} \cdot \omega - \frac{1}{A \cdot \omega}\\
+	\frac{1}{A \cdot \omega} &= \frac{b}{A} \cdot \omega\\
+	\omega_{0} &= \frac{1}{\sqrt{b}}\\
+	f_{0} &= \frac{1}{\tau} \cdot \frac{1}{2 \cdot \pi} = 1,592 kHz\\
+	V_{f_{0}} &= 1
+\end{alignat}
+
+\noindent Die zwei zu berechnenden Grenzfrequenzen können nach der Definition $H_{BP (j \omega_{g})} = \lvert H_{BP (j \omega)} \rvert_{max} \cdot \frac{1}{\sqrt{2}}$ berechnet werden.
+
+
+\begin{alignat}{2}
+\frac{1}{\sqrt{2}} &= \frac{V_{max} \cdot A \cdot \omega}{\sqrt{\left(1- b\cdot \omega^2 \right)^2 + A^2 \cdot \omega^2}}\\
+0 &= x^2 + \frac{A^2 - 2 \cdot b - 2 \cdot A^2 \cdot V_{max}}{b^2} \cdot x + \frac{1}{b^2}
+\end{alignat}
+
+\noindent Bestimmen der Möglichen Frequenzen:
+
+\begin{alignat}{2}
+x_{1,2} &= -\frac{p}{2} \pm \sqrt{\frac{p}{2}^2 - q}\\
+w_{g1} &= +\sqrt{x1}\\
+w_{g2} &= -\sqrt{x1}\\
+w_{g3} &= +\sqrt{x1}\\
+w_{g4} &= -\sqrt{x2}
+\end{alignat}
+
+\begin{alignat}{2}
+f_{gu} &= 1,4395 kHz\\
+f_{go} &= 1,7597 kHz\\
+B = f_{go} - f_{gu} &= 320,2 Hz
+\end{alignat}
+
+\subsubsection{Bandsperre}
+
+Werte müssen noch berechnet werden und stammen aus der PSPice simulation.\\
+
+\begin{alignat}{2}
+f_{0} &= 1,5922 kHz\\
+f_{go} &= 1,76014 kHz\\
+f_{gu} &= 1,43911 kHz\\
+B &= 321 Hz\\
+V_{0,\infty} &= 1
+\end{alignat}
