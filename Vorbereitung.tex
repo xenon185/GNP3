@@ -130,3 +130,78 @@ a_{1} &= \frac{R_{f} \cdot R_{0}}{R_{0} \cdot R_{e} } \cdot \tau \cdot b_{1}\\
 &\Rightarrow \frac{R_{f} \cdot R_{0}}{R_{0} \cdot R_{e} } \cdot \tau \cdot \frac{R_{0}}{R_{f}} \cdot \frac{1}{\tau^2}\\
 &\Rightarrow \frac{R_{0}}{R_{e}} \cdot \frac{1}{\tau}
 \end{alignat}
+
+\newpage
+
+\noindent \textbf{Allgemeine Formel zur Bestimmung der Grenzfrequenzen}\\\\
+
+\noindent Der Amplitudengang lautet:
+
+\begin{alignat}{2}
+\lvert H_{HP (j \omega)} \rvert = \frac{\lvert V_{\infty} \rvert \cdot \left(\frac{1}{b_{1}} \right) \cdot \omega^2}{\sqrt{\left(1 - \left(\frac{1}{b_{1}} \right) \cdot \omega^2 \right)^2 + \left(\frac{a_{1}}{b_{1}} \right) \cdot \omega^2}}
+\end{alignat}
+
+\noindent Mit der Definition $H_{HP (j \omega_{g})} = \lvert H_{HP (j \omega)} \rvert_{max} \cdot \frac{1}{\sqrt{2}}$ und $V_{\infty} = 1$ (Tabelle \ref{tab:Tiefpaesse_Grundverstaerkung}) kann die Gleichung nach $\omega_{g}$ aufgelöst werden.
+
+\begin{alignat}{2}
+\frac{1}{\sqrt{2}} = \frac{\lvert V_{\infty} \rvert \cdot \left(\frac{1}{b_{1}} \right) \cdot \omega^2}{\sqrt{\left(1 - \left(\frac{1}{b_{1}} \right) \cdot \omega^2 \right)^2 + \left(\frac{a_{1}}{b_{1}} \right) \cdot \omega^2}}\\
+\sqrt{2} \cdot \lvert V_{\infty} \rvert \cdot \left(\frac{1}{b_{1}} \right) \cdot \omega^2 = \sqrt{\left(1 - \left(\frac{1}{b_{1}} \right) \cdot \omega^2 \right)^2 + \left(\frac{a_{1}}{b_{1}} \right) \cdot \omega^2}\\
+2 \cdot \lvert V_{\infty} \rvert^2 \cdot \left(\frac{1}{b_{1}^2} \right) \cdot \omega^2 = \left(1 - \left(\frac{1}{b_{1}} \right) \cdot \omega^2 \right)^2 + \left(\frac{a_{1}}{b_{1}} \right) \cdot \omega^2\\
+0 = \left( \frac{1}{b_{1}^2} - 2 \cdot \lvert V_{\infty} \rvert^2 \cdot \frac{1}{b_{1}^2} \right) \cdot \omega^4 + \left(\frac{a_{1}^2}{b_{1}^2} - 2 \cdot \frac{1}{b_{1}} \right) \cdot \omega^2 + 1
+\end{alignat}
+
+
+
+
+\begin{alignat}{2}
+0 = x^2 + \frac{a_{1}^2 - 2 \cdot b_{1}}{1 - 2 \cdot \lvert V_{\infty} \rvert^2} \cdot x + \frac{b_{1}^2}{1 - 2 \cdot \lvert V_{\infty} \rvert^2}
+\end{alignat}
+
+\noindent Bestimmen der Möglichen Frequenzen:
+
+\begin{alignat}{2}
+x_{1,2} &= -\frac{p}{2} \pm \sqrt{\frac{p}{2}^2 - q}\\
+w_{g1} &= +\sqrt{x1}\\
+w_{g2} &= -\sqrt{x1}\\
+w_{g3} &= +\sqrt{x1}\\
+w_{g4} &= -\sqrt{x2}
+\end{alignat}
+
+\newpage
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{c|c|c}
+		$HP_{Filtercharakteristik}$ & Grundverstärkung $V_{\infty}$	& Grenzfrequenz $f_{g}$	\\
+		\hline
+		\hline
+		Butterworth	& 1	& 1,6107 kHz	\\
+		Tschebyscheff	& 1	& 1,6055 kHz	\\
+		Bessel	& 1	& 1,582 kHz 	\\
+	\end{tabular}
+	\caption{Hochpassfilter - Grundverstärkung $V_{\infty}$, Grenzfrequenz $f_{g}$ }
+	\label{tab:Hochpaesse_Grundverstaerkung}
+\end{table}
+
+\textbf{Bodeplot der HP-Filter Butterworth, Tschebyscheff und Bessel.}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\linewidth]{Bilder/HP_Butterworth}
+	\caption{}
+	\label{fig:HP_Butterworth}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\linewidth]{Bilder/HP_Tschebyscheff}
+	\caption{}
+	\label{fig:HP_Tschebyscheff}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\linewidth]{Bilder/HP_Bessel}
+	\caption{}
+	\label{fig:HP_Bessel}
+\end{figure}
