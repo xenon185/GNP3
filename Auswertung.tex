@@ -1,11 +1,72 @@
 \section{Auswertung}
 \subsection{Zu: Messung von Amplituden- und Phasengang der Filterschaltungen}
+\noindent Alle Messwerte und Grenzfrequenzen wurden zusammen mit den vorausberechneten Werten in einer Tabelle dargestellt.
 
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{c|c|c|c|c|c}
+			$ $                       & $Tiefpass$ & $Hochpass$   \\
+			\hline
+			$Butterworth_{errech.}$   & $1.573kHz$ & $1.611kHz$   \\
+			$Butterworth_{gemes.}$    & $1.538kHz$ & $1.596kHz$   \\
+			\hline
+			$Tschebyscheff_{errech.}$ & $1.578kHz$ & $1.606kHz$   \\
+			$Tschebyscheff_{gemes.} $ &	$1.557kHz$ & $1.592kHz$   \\
+			\hline
+			$Bessel_{errech.}$        & $1.585kHz$ & $1.582kHz$   \\
+			$Bessel_{gemes.}$         & $1.551kHz$ & $1.610kHz$
+		\end{tabular}
+		\caption{Vergleich: gemessenen und vorausbestimmte Grenzfrequenzen der verschieden Tiefpässe/Hochpässe}
+		\label{tab:grenzfrequnzen_hp_tp_vorausberechnung}
+   	  \end{table}
 
+		\begin{table}[h]
+			\centering
+			\begin{tabular}{c|c|c|c|c|c}
+				$ $          & $Mittenfrequ._{errech.} / Mittenfreuqu._{gemes.}$ & $Sperrfrequ._{errech.} / Sperrfrequ._{gemes.}$  \\
+				\hline
+				$Bandpass$   & $1.556kHz / 1.591kHz$       & $/$         \\
+				\hline
+				$Bandsperre$ & $/$              & $1.568kHz / 1.592kHz$  \\   
+			\end{tabular}
+			\caption{Gegenüberstellung: gemessene und vorausbestimmte Mittenfrequenz und Sperrfrequenz des Bandpasses sowie der Bandsperre}
+			\label{tab:grenzfrequnzen_bs_bp_vorausberechnung}
+		\end{table}
+		
+		\begin{table}[h]
+			\centering
+			\begin{tabular}{c|c|c|c|c|c}
+				$ $                         & $-60^\circ $ & $-120^\circ$  \\
+				\hline		
+				$Butterworth_{errechnet}$   & $...$        & $...$         \\
+				$Butterworth_{gemessen }$   & $1.046kHz$   & $2.381kHz$    \\
+				\hline
+				$Tschebyscheff_{errechnet}$ & $...$        & $...$         \\   
+				$Tschebyscheff_{gemessen }$ & $898.250kHz$ & $1.400kHz$    \\ 
+				\hline
+				$Bessel_{errechnet}$        & $...$        & $...$         \\  
+				$Bessel_{gemessen }$        & $1.229kHz$   & $3.225kHz$    \\
+			\end{tabular}
+			\caption{Gegenüberstellung: gemessene und vorausbestimmte Frequenzen bei einer Phasenverschiebung von $-60^\circ$ und $-120^\circ$ }
+			\label{tab:phasenverschiebung_hp_tp_vorausberechnung}
+		\end{table}
 \newpage
 
 \subsection{Zu: Sprungantworten der Tiefpässe}
+\noindent Die Anstiegszeit, das Überschwingen sowie die Einschwingzeit der drei Tiefpässe wurden gemeinsam in einer Tabelle zusammengefasst und verglichen.
 
-
-
+\begin{table}[h]
+	\centering
+	\begin{tabular}{c|c|c|c|c|c}
+		$ $             & $Anstiegszeit$ & $Ueberschwingen$ & $Einschwingzeit$  \\
+		\hline
+		$Butterworth$   & $220\mu s$     & $4.86\%$        & $320\mu s$ \\
+		\hline
+		$Tschebyscheff$ & $220\mu s$     & $27.24\%$       & $1.06ms$   \\
+		\hline
+		$Bessel$        & $268\mu s$     & $0\%$           & $308\mu s$ \\
+	\end{tabular}
+	\caption{Anstiegszeit, Überschwingen und Einschwingzeit der drei Tiefpässe}
+	\label{tab:sprungantworten_tp}
+\end{table}
 \newpage
