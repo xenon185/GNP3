@@ -1,0 +1,18 @@
+** Profile: "SCHEMATIC1-freq_simu"  [ D:\10_HAW\15_Gitkraken\GNP3\PSPice\gnp-3 aktiv rc-filter tp-pspicefiles\schematic1\freq_simu.sim ] 
+
+** Creating circuit file "freq_simu.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\OrCAD\OrCAD_16.0_Demo\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1E3 1E1 1E6
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

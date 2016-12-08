@@ -71,6 +71,7 @@ xlim([10E1 1E4]);
 damp_sys1 = 20*log10(bode(sys1, wg3));
 
 
+step(sys1);
 
 %% PLOT time simu
 plot(simout.Time, simout.Data)
