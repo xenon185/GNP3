@@ -1,0 +1,58 @@
+(ExpressProject "GNP-3 AKTIV RC-FILTER BP"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\gnp-3 aktiv rc-filter bp.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\gnp-3 aktiv rc-filter bp-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\gnp-3 aktiv rc-filter bp-pspicefiles\schematic1\freq_simu.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\gnp-3 aktiv rc-filter bp-pspicefiles\schematic1\freq_simu.sim"
+        (DisplayName "SCHEMATIC1-freq_simu")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "D:\10_HAW\15_Gitkraken\GNP3\PSPice\gnp-3 aktiv rc-filter bp.dsn")
+      (Path "Design Resources"
+         "D:\10_HAW\15_Gitkraken\GNP3\PSPice\gnp-3 aktiv rc-filter bp.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "D:\10_HAW\15_Gitkraken\GNP3\PSPice\gnp-3 aktiv rc-filter bp.dsn"
+         "SCHEMATIC1" "Bandpass"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 -1 199 53 427"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 104 1284 104 517")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "D:\10_HAW\15_GITKRAKEN\GNP3\PSPICE\GNP-3 AKTIV RC-FILTER BP.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Bandpass"))))
