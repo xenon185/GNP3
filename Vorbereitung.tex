@@ -56,7 +56,7 @@ b_{1} &= \frac{R_{0}}{R_{d}} \cdot \tau^2
 x_{1,2} &= -\frac{p}{2} \pm \sqrt{\frac{p}{2}^2 - q}\\
 w_{g1} &= +\sqrt{x1}\\
 w_{g2} &= -\sqrt{x1}\\
-w_{g3} &= +\sqrt{x1}\\
+w_{g3} &= +\sqrt{x2}\\
 w_{g4} &= -\sqrt{x2}
 \end{alignat}
 
@@ -163,7 +163,7 @@ a_{1} &= \frac{R_{f} \cdot R_{0}}{R_{0} \cdot R_{e} } \cdot \tau \cdot b_{1}\\
 x_{1,2} &= -\frac{p}{2} \pm \sqrt{\frac{p}{2}^2 - q}\\
 w_{g1} &= +\sqrt{x1}\\
 w_{g2} &= -\sqrt{x1}\\
-w_{g3} &= +\sqrt{x1}\\
+w_{g3} &= +\sqrt{x2}\\
 w_{g4} &= -\sqrt{x2}
 \end{alignat}
 
@@ -254,7 +254,7 @@ H_{BP}(jw) &= V_{max} \cdot \frac{1}{\frac{1}{j\omega \cdot A} + 1 + \frac{j\ome
 x_{1,2} &= -\frac{p}{2} \pm \sqrt{\frac{p}{2}^2 - q}\\
 w_{g1} &= +\sqrt{x1}\\
 w_{g2} &= -\sqrt{x1}\\
-w_{g3} &= +\sqrt{x1}\\
+w_{g3} &= +\sqrt{x2}\\
 w_{g4} &= -\sqrt{x2}
 \end{alignat}
 
@@ -277,7 +277,7 @@ H_{BS}(j\omega) = V_{0} \cdot \frac{1 + (j\omega)^2}{1 + A \cdot j \omega + b \c
 \noindent Dadurch ergeben sich die nachfolgenden Parameter:
 
 \begin{alignat}{2}
-A &= \frac{R_{0}}{R_{c}}\\
+A &= \frac{R_{0}}{R_{c}} \cdot \tau\\
 b &= \tau^2\\
 V_{0} &= - \frac{R_{0}}{R_{a}}
 \end{alignat}
@@ -285,9 +285,9 @@ V_{0} &= - \frac{R_{0}}{R_{a}}
 \noindent Das Maximum der Bandsperre kann für $\lim\limits_{\omega \to \infty}$ oder $\lim\limits_{\omega \to 0}$ bestimmt werden und strebt gegen 1. Somit kann nach der Definition $H_{BS (j \omega_{g})} = \lvert H_{HP (j \omega)} \rvert_{max} \cdot \frac{1}{\sqrt{2}}$  die Gleichung nach $\omega_{g}$ aufgelöst werden.
 
 \begin{alignat}{2}
-\frac{1}{\sqrt{2}} = \frac{\lvert V_{0} \rvert \cdot \lvert 1-  \omega^2 \rvert}{\sqrt{(1- b \cdot \omega^2)^2 + A \cdot \omega^2}}\\
-\sqrt{(1- b \cdot \omega^2)^2 + A \cdot \omega^2} = \lvert V_{0} \rvert \cdot \lvert 1-\omega^2 \rvert \cdot \sqrt{2}\\
-0 = x^2 + \frac{A^2-2 \cdot b + 2\cdot V_{0}}{b^2} \cdot x + \frac{1-2\cdot V_{0}}{b^2}
+\frac{1}{\sqrt{2}} = \frac{\lvert V_{0} \rvert \cdot \lvert 1- b \omega^2 \rvert}{\sqrt{(1- b \cdot \omega^2)^2 + A \cdot \omega^2}}\\
+\sqrt{(1- b \cdot \omega^2)^2 + A \cdot \omega^2} = \lvert V_{0} \rvert \cdot \lvert 1- b \omega^2 \rvert \cdot \sqrt{2}\\
+0 = x^2 + \frac{A^2 - 2 \cdot b + 4 \cdot b V_{0}^2}{b^2 - 2 \cdot b^2 V_{0}^2} \cdot x + \frac{1-2\cdot V_{0}^2}{b^2 - 2 \cdot b^2 V_{0}^2}
 \end{alignat}
 
 \noindent Bestimmen der Möglichen Frequenzen:
@@ -296,29 +296,13 @@ V_{0} &= - \frac{R_{0}}{R_{a}}
 x_{1,2} &= -\frac{p}{2} \pm \sqrt{\frac{p}{2}^2 - q}\\
 w_{g1} &= +\sqrt{x1}\\
 w_{g2} &= -\sqrt{x1}\\
-w_{g3} &= +\sqrt{x1}\\
+w_{g3} &= +\sqrt{x2}\\
 w_{g4} &= -\sqrt{x2}
 \end{alignat}
 
 \begin{alignat}{2}
-f_{gu} &= \\
-f_{go} &= \\
-B = f_{go} - f_{gu} &= 
+f_{gu} &= 1,4395 Khz\\
+f_{go} &= 1,7597 Khz\\
+B = f_{go} - f_{gu} &= 320,24 Hz
 \end{alignat}
 
-
-
-
-
-
-
-
-Werte müssen noch berechnet werden und stammen aus der PSPice simulation.\\
-
-\begin{alignat}{2}
-f_{0} &= 1,5922 kHz\\
-f_{go} &= 1,76014 kHz\\
-f_{gu} &= 1,43911 kHz\\
-B &= 321 Hz\\
-V_{0,\infty} &= 1
-\end{alignat}
