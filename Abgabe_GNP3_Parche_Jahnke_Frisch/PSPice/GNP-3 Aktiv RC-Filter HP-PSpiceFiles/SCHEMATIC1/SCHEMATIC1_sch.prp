@@ -1,0 +1,384 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("C")
+        ("R")
+        ("VAC")
+    )
+    ("instances"
+        ("C8"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C8")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10n")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("R7"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R7")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Ra1"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Ra1")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("R8"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R8")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Rb1"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Rb1")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Rf3"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Rf3")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"1.69k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Rd1"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Rd1")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("V4"
+            ("device_name"	"VAC")
+            ("pspice_path"	"V_V4")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0Vdc")
+                    ("pspice_param"	"DC")
+                )
+                ("ACMAG"
+                    ("value"	"1Vac")
+                    ("pspice_param"	"AC")
+                )
+            )
+        )
+        ("C3"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C3")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10n")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Re3"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Re3")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.09k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Rc1"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Rc1")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Ra2"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Ra2")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("C4"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C4")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10n")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("R3"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R3")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Rb2"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Rb2")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("R4"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R4")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Rd2"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Rd2")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("C5"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C5")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10n")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Rf1"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Rf1")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"5.36k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Rc2"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Rc2")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("C6"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C6")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10n")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("V2"
+            ("device_name"	"VAC")
+            ("pspice_path"	"V_V2")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0Vdc")
+                    ("pspice_param"	"DC")
+                )
+                ("ACMAG"
+                    ("value"	"1Vac")
+                    ("pspice_param"	"AC")
+                )
+            )
+        )
+        ("Re1"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Re1")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"2.43k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("R5"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R5")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Ra3"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Ra3")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("R6"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R6")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Rb3"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Rb3")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Rf2"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Rf2")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Rd3"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Rd3")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("C7"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C7")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10n")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("V3"
+            ("device_name"	"VAC")
+            ("pspice_path"	"V_V3")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0Vdc")
+                    ("pspice_param"	"DC")
+                )
+                ("ACMAG"
+                    ("value"	"1Vac")
+                    ("pspice_param"	"AC")
+                )
+            )
+        )
+        ("Rc3"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Rc3")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("Re2"
+            ("device_name"	"R")
+            ("pspice_path"	"R_Re2")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"2.32k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+    )
+)

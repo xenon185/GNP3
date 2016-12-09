@@ -1,6 +1,6 @@
 \section{Vorbereitung}
 Es sind an einem Universalfilter verschiedenen Filtertypen 2. Ordnung zu Untersuchen. Über die Widerstandsbeschaltung $R_{a},~R_{b},~R_{c},~R_{d},~R_{e}~und~R_{f}$ können bestimmte Filtercharakteristiken, wie Butterworth, Tschebyscheff und Bessel nachgebildet werden.
-Mit der Tabelle \cite{Aufgabenstellung} in der Aufgabenstellung sollen bei den Hochpass- und Tiefpassfilter der drei genannten Filtercharakteristiken die Grenzfrequenz $f_{g}$ und die Grundverstärkung $V_{0}$ bestimmt werden.
+Mit der Tabelle in der Aufgabenstellung sollen bei den Hochpass- und Tiefpassfilter der drei genannten Filtercharakteristiken die Grenzfrequenz $f_{g}$ und die Grundverstärkung $V_{0}$ bestimmt werden.
 Bei dem Bandpass ist die Mittenfrequenz $f_{M}$ und die Bandbreite $B$ zu berechnen.
 Die Bandsperre wird auf ihre Sperrfrequenz untersucht.
 
@@ -10,7 +10,7 @@ Die Bandsperre wird auf ihre Sperrfrequenz untersucht.
 
 \subsubsection{Tiefpassfilter}
 
-In der Versuchsbeschreibung \cite{Aufgabenstellung} Kapitel 7: Gleichungen zum Universal-Filter wird die Übertragungsfunktion $H_{TP}$ angegeben mit.\\
+In der Versuchsbeschreibung Kapitel 7: Gleichungen zum Universal-Filter wird die Übertragungsfunktion $H_{TP}$ angegeben mit.\\
 
 \begin{alignat}{2}
 H_{TP} (j \omega)&= \frac{U_{TP}}{U_{e}} &= \frac{R_{b} \cdot R_{f}}{R_{a} \cdot R_{c}} \cdot \frac{1}{1+\frac{R_{b} \cdot R_{f}}{R_{c} \cdot R_{e}} \cdot  \left(j \omega \tau \right) + \frac{R_{f}}{R_{d}} \cdot \left ( j \omega \tau \right)^2}~~~~ mit ~\tau = R \cdot C
@@ -97,7 +97,7 @@ w_{g4} &= -\sqrt{x2}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\linewidth]{Bilder/TP_Bessel}
+\includegraphics[width=0.9\linewidth]{Bilder/TP_Bessel}
 \caption{Amplituden- und Phasengang vom Bessel-Tiefpassfilter}
 \label{fig:TP_Bessel}
 \end{figure}
@@ -107,7 +107,7 @@ w_{g4} &= -\sqrt{x2}
 
 \subsubsection{Hochpassfilter}
 
-In der Versuchsbeschreibung \cite{Aufgabenstellung} Kapitel 7: Gleichungen zum Universal-Filter wird die Übertragungsfunktion $H_{HP}$ angegeben mit.\\
+In der Versuchsbeschreibung Kapitel 7: Gleichungen zum Universal-Filter wird die Übertragungsfunktion $H_{HP}$ angegeben mit.\\
 
 \begin{alignat}{2}
 H_{HP} (j \omega)&= \frac{U_{HP}}{U_{e}} &= \frac{R_{b} \cdot R_{d}}{R_{a} \cdot R_{c}} \cdot \frac{ \frac{R_{f} }{R_{d}} \cdot \left( j \omega \tau \right)^2 }{1+\frac{R_{b} \cdot R_{f}}{R_{c} \cdot R_{e}} \cdot  \left(j \omega \tau \right) + \frac{R_{f}}{R_{d}} \cdot \left ( j \omega \tau \right)^2}~~~~ mit ~\tau = R \cdot C
@@ -190,7 +190,7 @@ w_{g4} &= -\sqrt{x2}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Bilder/HP_Butterworth}
+	\includegraphics[width=0.9\linewidth]{Bilder/HP_Butterworth}
 	\caption{Amplituden- und Phasengang vom Butterworth-Hochpassfilter}
 	\label{fig:HP_Butterworth}
 \end{figure}
@@ -326,7 +326,7 @@ f_{0} = \sqrt{f_{go} \cdot f_{gu}} &= \sqrt{1,7597kHz * 1,4395khZ} = 1,5916kHz
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\linewidth]{Bilder/Bandsperre}
+\includegraphics[width=0.9\linewidth]{Bilder/Bandsperre}
 \caption{Amplituden- und Phasengang der Bandsperre}
 \label{fig:Bandsperre}
 \end{figure}
