@@ -208,7 +208,7 @@ w_{g4} &= -\sqrt{x2}
 
 \newpage
 
-\subsubsection{Bandpassfilter}
+\subsubsection{Bandpass}
 
 Die vereinfachte Formel für den Bandpassfilter hergeleitet vom Universalfilter kann der Allgemeinen Übertragungsfunktion eine Bandpassen gleichgesetzt und so die Parameter bestimmt werden.
 
@@ -264,7 +264,54 @@ f_{go} &= 1,7597 kHz\\
 B = f_{go} - f_{gu} &= 320,2 Hz
 \end{alignat}
 
+\newpage
+
 \subsubsection{Bandsperre}
+
+Die vereinfachte Formel für den Bandpassfilter hergeleitet vom Universalfilter kann der Allgemeinen Übertragungsfunktion eine Bandpassen gleichgesetzt und so die Parameter bestimmt werden.
+
+\begin{alignat}{2}
+H_{BS}(j\omega) = V_{0} \cdot \frac{1 + (j\omega)^2}{1 + A \cdot j \omega + b \cdot (j\omega)^2} \Longleftrightarrow - \frac{R_{0}}{R_{a}} \cdot \frac{1 + (j\omega \tau)^2}{1 + \frac{R_{0}}{R_{c}} \cdot (j\omega \tau) + (j\omega \tau)^2}
+\end{alignat}
+
+\noindent Dadurch ergeben sich die nachfolgenden Parameter:
+
+\begin{alignat}{2}
+A &= \frac{R_{0}}{R_{c}}\\
+b &= \tau^2\\
+V_{0} &= - \frac{R_{0}}{R_{a}}
+\end{alignat}
+
+\noindent Das Maximum der Bandsperre kann für $\lim\limits_{\omega \to \infty}$ oder $\lim\limits_{\omega \to 0}$ bestimmt werden und strebt gegen 1. Somit kann nach der Definition $H_{BS (j \omega_{g})} = \lvert H_{HP (j \omega)} \rvert_{max} \cdot \frac{1}{\sqrt{2}}$  die Gleichung nach $\omega_{g}$ aufgelöst werden.
+
+\begin{alignat}{2}
+\frac{1}{\sqrt{2}} = \frac{\lvert V_{0} \rvert \cdot \lvert 1-  \omega^2 \rvert}{\sqrt{(1- b \cdot \omega^2)^2 + A \cdot \omega^2}}\\
+\sqrt{(1- b \cdot \omega^2)^2 + A \cdot \omega^2} = \lvert V_{0} \rvert \cdot \lvert 1-\omega^2 \rvert \cdot \sqrt{2}\\
+0 = x^2 + \frac{A^2-2 \cdot b + 2\cdot V_{0}}{b^2} \cdot x + \frac{1-2\cdot V_{0}}{b^2}
+\end{alignat}
+
+\noindent Bestimmen der Möglichen Frequenzen:
+
+\begin{alignat}{2}
+x_{1,2} &= -\frac{p}{2} \pm \sqrt{\frac{p}{2}^2 - q}\\
+w_{g1} &= +\sqrt{x1}\\
+w_{g2} &= -\sqrt{x1}\\
+w_{g3} &= +\sqrt{x1}\\
+w_{g4} &= -\sqrt{x2}
+\end{alignat}
+
+\begin{alignat}{2}
+f_{gu} &= \\
+f_{go} &= \\
+B = f_{go} - f_{gu} &= 
+\end{alignat}
+
+
+
+
+
+
+
 
 Werte müssen noch berechnet werden und stammen aus der PSPice simulation.\\
 
