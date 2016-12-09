@@ -43,7 +43,7 @@
 		
 \newpage
 
-\subsubsection{Gemessenen Frequenzen bei einer Phasenverschiebung}
+\subsubsection{Gemessenen Frequenzen bei einer Phasenverschiebung der Tiefpässe}
 \noindent Die gemessenen Frequenzen wurden in einer Tabelle dargestellt und anschließend verglichen.
 
 		\begin{table}[h]
@@ -62,8 +62,20 @@
 		\end{table}
 		
 \noindent Aus den bei einer bestimmten Phasenverschiebung gemessenen Frequenzen ist es möglich die Koeffizienten der drei Filterarten zu bestimmen. 
+\noindent Für einen Tiefpass bestimmter Art der 2. Ordnung gilt:
 
- 
+\small{
+\begin{alignat*}{2}
+arg\underline{H}_{TP}(\Omega) &= arg(V_0) - arctan(\frac{a_1 \cdot \Omega}{1-b_1\cdot \Omega^2}) \\
+tan(arg\underline{H}_{TP}(\Omega)) &= tan(1) - \frac{a_1 \cdot \Omega}{1-b_1\cdot \Omega^2}\\
+a_1 &= \frac{\Bigl(tan(1) - tan(arg\underline{H}_{TP}(\Omega))\Bigr)\Bigl(1-b_1 \cdot \Omega^2\Bigr)}{\Omega}\\
+\frac{\Bigl(tan(1) - tan(arg\underline{H}_{TP}(\Omega_{-60^\circ}))\Bigr)\Bigl(1-b_1 \cdot \Omega_{-60^\circ}^2\Bigr)}{\Omega_{-60^\circ}} &= \frac{\Bigl(tan(1) - tan(arg\underline{H}_{TP}(\Omega_{-120^\circ}))\Bigr)\Bigl(1-b_1 \cdot \Omega_{-120^\circ}^2\Bigr)}{\Omega_{-120^\circ}}\\
+\frac{\Bigl(tan(1) - tan(-60^\circ))\Bigr)\Bigl(1-b_1 \cdot \Omega_{-60^\circ}^2\Bigr)}{\Omega_{-60^\circ}} &= \frac{\Bigl(tan(1) - tan(-120^\circ)\Bigr)\Bigl(1-b_1 \cdot \Omega_{-120^\circ}^2\Bigr)}{\Omega_{-120^\circ}}\\
+\frac{\Bigl( 3.289 \Bigr)\Bigl(1-b_1 \cdot \Omega_{-60^\circ}^2\Bigr)}{\Omega_{-60^\circ}} &= \frac{\Bigl(-0.175\Bigr)\Bigl(1-b_1 \cdot \Omega_{-120^\circ}^2\Bigr)}{\Omega_{-120^\circ}}\\
+\rightarrow b_1 &= \frac{3.289\cdot \Omega_{-120^\circ}+0.175\cdot \Omega_{-60^\circ}}
+{3.289\cdot \Omega_{-120^\circ}\cdot \Omega_{-60^\circ}^2 +0.175\cdot \Omega_{-60^\circ}\cdot \Omega_{-120^\circ}^2}
+\end{alignat*}}
+
 \newpage
 
 \subsection{Zu: Sprungantworten der Tiefpässe}
