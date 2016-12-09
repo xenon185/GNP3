@@ -1,4 +1,4 @@
-%% BS
+%% Bandsperre
 
 % Parameter
 NAME = 'Bandsperre';
