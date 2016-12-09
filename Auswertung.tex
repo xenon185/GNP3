@@ -1,6 +1,7 @@
 \section{Auswertung}
 \subsection{Zu: Messung von Amplituden- und Phasengang der Filterschaltungen}
-\noindent Alle Messwerte und Grenzfrequenzen wurden zusammen mit den vorausberechneten Werten in einer Tabelle dargestellt.
+\subsubsection{Grenzfrequenzen Tiefpässe/Hochpässe}
+\noindent Alle Messwerte der Grenzfrequenzen wurden zusammen mit den vorausberechneten Werten in einer Tabelle dargestellt und verglichen.
 
 	\begin{table}[h]
 		\centering
@@ -20,6 +21,9 @@
 		\label{tab:grenzfrequnzen_hp_tp_vorausberechnung}
    	  \end{table}
 
+\subsubsection{Mittenfrequenz/Sperrfrequenz des Bandpasses/der Bandsperre}
+\noindent Die gemessenen Frequenzen wurden zusammen mit den vorausberechneten Werten in einer Tabelle dargestellt und anschließend verglichen.
+
 		\begin{table}[h]
 			\centering
 			\begin{tabular}{c|c|c|c|c|c}
@@ -33,23 +37,29 @@
 			\label{tab:grenzfrequnzen_bs_bp_vorausberechnung}
 		\end{table}
 		
+\newpage
+
+\subsubsection{Gemessenen Frequenzen bei einer Phasenverschiebung}
+\noindent Die gemessenen Frequenzen wurden in einer Tabelle dargestellt und anschließend verglichen.
+
 		\begin{table}[h]
 			\centering
 			\begin{tabular}{c|c|c|c|c|c}
-				$ $                         & $-60^\circ $ & $-120^\circ$  \\
+				$ $             & $-60^\circ $ & $-120^\circ$  \\
 				\hline		
-				$Butterworth_{errechnet}$   & $...$        & $...$         \\
-				$Butterworth_{gemessen }$   & $1.046kHz$   & $2.381kHz$    \\
+				$Butterworth$   & $1.046kHz$   & $2.381kHz$    \\
 				\hline
-				$Tschebyscheff_{errechnet}$ & $...$        & $...$         \\   
-				$Tschebyscheff_{gemessen }$ & $898.250kHz$ & $1.400kHz$    \\ 
+				$Tschebyscheff$ & $898.250kHz$ & $1.400kHz$    \\ 
 				\hline
-				$Bessel_{errechnet}$        & $...$        & $...$         \\  
-				$Bessel_{gemessen }$        & $1.229kHz$   & $3.225kHz$    \\
+				$Bessel$        & $1.229kHz$   & $3.225kHz$    \\
 			\end{tabular}
-			\caption{Gegenüberstellung: gemessene und vorausbestimmte Frequenzen bei einer Phasenverschiebung von $-60^\circ$ und $-120^\circ$ }
+			\caption{Gemessene Frequenzen bei einer Phasenverschiebung von $-60^\circ$ und $-120^\circ$ }
 			\label{tab:phasenverschiebung_hp_tp_vorausberechnung}
 		\end{table}
+		
+\noindent Aus den bei einer bestimmten Phasenverschiebung gemessenen Frequenzen ist es möglich die Koeffizienten der drei Filterarten zu bestimmen. 
+
+ 
 \newpage
 
 \subsection{Zu: Sprungantworten der Tiefpässe}
