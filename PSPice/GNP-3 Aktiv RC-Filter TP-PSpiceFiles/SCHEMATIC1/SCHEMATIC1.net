@@ -9,6 +9,8 @@ R_Rf         N19166 N19280  3.32k
 E_U12         N17975 0 VALUE {LIMIT(V(0,N17961)*1E6,-15V,+15V)} _U12 0 N17961
 +  1G
 
+V_U13         N20435 0  
++PULSE 1 0 0 
 V_V1         N19110 0 DC 0Vdc AC 1Vac 
 R_Rb1         N20415 N20449  3.32k  
 R_Re         N19090 N19212  2.32k  
