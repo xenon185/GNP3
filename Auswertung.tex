@@ -1,39 +1,43 @@
 \section{Auswertung}
-\subsection{Zu: Messung von Amplituden- und Phasengang der Filterschaltungen}
+\subsection{Zu: Messung von Amplituden- und Phasengang}
 \subsubsection{Grenzfrequenzen Tiefpässe/Hochpässe}
 \noindent Alle Messwerte der Grenzfrequenzen wurden zusammen mit den vorausberechneten Werten in einer Tabelle dargestellt und verglichen.
-
-	\begin{table}[h]
-		\centering
-		\begin{tabular}{c|c|c|c|c|c}
-			$ $                       & $Tiefpass$ & $Hochpass$   \\
+   	  
+   	  \begin{table}[h]
+   	  	\centering
+   	  	\begin{tabular}{c|c|c|c|c|c|}
+						   	&	& $f_{g,rech}$	& $f_{g,mess}$	& $\Delta f_g$	& $\Delta f_g$ [\%] \\
+   	  		\hline
+   	  		Butterworth		& TP& $1.573kHz$	& $1.538kHz$	& $35Hz$		& $2,23$\\
+							& HP& $1.611kHz$	& $1.596kHz$	& $15Hz$		& $0,93$\\
 			\hline
-			$Butterworth_{errech.}$   & $1.573kHz$ & $1.611kHz$   \\
-			$Butterworth_{gemes.}$    & $1.538kHz$ & $1.596kHz$   \\
-			\hline
-			$Tschebyscheff_{errech.}$ & $1.578kHz$ & $1.606kHz$   \\
-			$Tschebyscheff_{gemes.} $ &	$1.557kHz$ & $1.592kHz$   \\
-			\hline
-			$Bessel_{errech.}$        & $1.585kHz$ & $1.582kHz$   \\
-			$Bessel_{gemes.}$         & $1.551kHz$ & $1.610kHz$
-		\end{tabular}
-		\caption{Vergleich: gemessenen und vorausbestimmte Grenzfrequenzen der verschieden Tiefpässe/Hochpässe}
+   	  		Tschebyscheff	& TP& $1.578kHz$	& $1.557kHz$	& $21Hz$		& $1,33$\\
+				   	  		& HP& $1.606kHz$	& $1.592kHz$	& $14Hz$		& $0,87$\\
+   	  		\hline
+   	  		Bessel			& TP& $1.585kHz$	& $1.551kHz$	& $34Hz$		& $2,15$\\
+				   	  		& HP& $1.582kHz$	& $1.610kHz$	& $28Hz$		& $1,77$
+   	  	\end{tabular}
+		\caption{Vergleich der Werte, Tiefpässe und Hochpässe}
 		\label{tab:grenzfrequnzen_hp_tp_vorausberechnung}
    	  \end{table}
+   	  
+   	  \newpage
 
 \subsubsection{Mittenfrequenz/Sperrfrequenz des Bandpasses/der Bandsperre}
 \noindent Die gemessenen Frequenzen wurden zusammen mit den vorausberechneten Werten in einer Tabelle dargestellt und anschließend verglichen.
 
 		\begin{table}[h]
 			\centering
-			\begin{tabular}{c|c|c|c|c|c}
-				$ $          & $Mittenfrequ._{errech.} / Mittenfreuqu._{gemes.}$ & $Sperrfrequ._{errech.} / Sperrfrequ._{gemes.}$  \\
+			\resizebox{\textwidth}{!}{
+			\begin{tabular}{c|c|c|c|c}
+							& Mittenfreq$_{rech}$	& Mittenfreq$_{mess}$	& Sperrfreq$_{rech}$& Sperrfreq$_{mess}$\\
 				\hline
-				$Bandpass$   & $1.556kHz / 1.591kHz$       & $/$         \\
+				Bandpass	& $1.556kHz$			& $1.591kHz$			& -					& -					\\
 				\hline
-				$Bandsperre$ & $/$              & $1.568kHz / 1.592kHz$  \\   
+				Bandsperre& -						& -						& $1.568kHz$		& $1.592kHz$		\\   
 			\end{tabular}
-			\caption{Gegenüberstellung: gemessene und vorausbestimmte Mittenfrequenz und Sperrfrequenz des Bandpasses sowie der Bandsperre}
+			}
+			\caption{Vergleich der Werte, Bandpass und Bandsperre}
 			\label{tab:grenzfrequnzen_bs_bp_vorausberechnung}
 		\end{table}
 		
@@ -68,13 +72,13 @@
 \begin{table}[h]
 	\centering
 	\begin{tabular}{c|c|c|c|c|c}
-		$ $             & $Anstiegszeit$ & $Ueberschwingen$ & $Einschwingzeit$  \\
+						& Anstiegszeit 	& Überschwingen	& Einschwingzeit  \\
 		\hline
-		$Butterworth$   & $220\mu s$     & $4.86\%$        & $320\mu s$ \\
+		Butterworth		& $220\mu s$	& $4.86\%$		& $320\mu s$ \\
 		\hline
-		$Tschebyscheff$ & $220\mu s$     & $27.24\%$       & $1.06ms$   \\
+		Tschebyscheff	& $220\mu s$	& $27.24\%$		& $1.06ms$   \\
 		\hline
-		$Bessel$        & $268\mu s$     & $0\%$           & $308\mu s$ \\
+		Bessel			& $268\mu s$	& $0\%$			& $308\mu s$ \\
 	\end{tabular}
 	\caption{Anstiegszeit, Überschwingen und Einschwingzeit der drei Tiefpässe}
 	\label{tab:sprungantworten_tp}

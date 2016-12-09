@@ -12,9 +12,9 @@
 			\item Hewlett Packard 33120A 15MHz Function/Arbitary Waveform Generator
 		\end{itemize}
 		
-		\item 3 Kabel
+		\item Kabel
 		\begin{itemize}
-			\item 3 mal 1m BNC Kabel
+			\item 1m BNC Kabel
 		\end{itemize}
 		
 		\item Audio Analyzer
@@ -28,7 +28,7 @@
 
 \newpage
 
-\subsection{Messung von Amplituden- und Phasengang der Filterschaltungen}
+\subsection{Messung von Amplituden- und Phasengang}
 \noindent In diesem Versuch geht es darum, die Amplituden und Phasengänge der Butterworth-, Tschebyscheff- und Bessel-Tiefpässe und die Amplitudengänge der Butterworth-, Tschebyscheff- und Bessel-Hochpässe sowie des Bandpasses und der Bandsperre mittels dem Audio-Analyzer UVP zu messen. Die folgende Tabelle zeigt unsere gemessenen Grenzfrequenzen der Tiefpässe/Hochpässe. Die Graphen sind im Anhang zu finden.
 
 	\begin{table}[h]
@@ -64,8 +64,8 @@
 	\begin{tabular}{c|c|c|c|c|c}
 		$ $          & $Mittenfrequenz$ & $Sperrfrequenz$  \\
 		\hline
-		$Bandpass$   & $1.556kHz$       & $/$         \\
-		$Bandsperre$ & $/$              & $1.568kHz$  \\   
+		$Bandpass$   & $1.556kHz$       & -         \\
+		$Bandsperre$ & -              & $1.568kHz$  \\   
 	\end{tabular}
 	\caption{Mittenfrequenz und Sperrfrequenz des Bandpasses sowie der Bandsperre}
 	\label{tab:grenzfrequnzen_bs_bp}
@@ -74,7 +74,15 @@
 \newpage
 
 \subsection{Sprungantworten der Tiefpässe}
-\noindent In diesem Versuch geht darum, die Anstiegszeit, Überschwingen und die Einstiegszeit der drei Tiefpässe nach Butterworth, Tschebyscheff und Bessel aus der Sprungantwort zu bestimmen. Die Filter wurde mit einem Rechtecksignal ($500mV_pp$ und $250mv$ Offset und variabler Frequenz) angesteuert. Eingangs- und Ausgangssignal wurden in einem gemeinsamen Oszillogramm dargestellt. 
+\noindent In diesem Versuch geht darum, die Anstiegszeit, Überschwingen und die Einstiegszeit der drei Tiefpässe nach Butterworth, Tschebyscheff und Bessel aus der Sprungantwort zu bestimmen. Die Filter wird mit einem Rechtecksignal ($500mV_pp$ und $250mv$ Offset und variabler Frequenz) angesteuert. Eingangs- und Ausgangssignal werden in einem gemeinsamen Oszillogramm dargestellt. Der Messaufbau ist in der nachfolgenden Abbildung zu sehen.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{Bilder/Messaufbau_Oszi}
+\caption{Messaufbau zum Messen der Sprungantwort}
+\label{fig:Messaufbau_Oszi}
+\end{figure}
+
 
 \begin{figure}[h]
 \centering
