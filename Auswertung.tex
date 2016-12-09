@@ -1,7 +1,7 @@
 \section{Auswertung}
 \subsection{Zu: Messung von Amplituden- und Phasengang}
 \subsubsection{Grenzfrequenzen Tiefpässe/Hochpässe}
-\noindent Alle Messwerte der Grenzfrequenzen wurden zusammen mit den vorausberechneten Werten in einer Tabelle dargestellt und verglichen.
+\noindent Alle Messwerte der Grenzfrequenzen werden zusammen mit den vorausberechneten Werten in einer Tabelle dargestellt und verglichen.
    	  
    	  \begin{table}[h]
    	  	\centering
@@ -21,44 +21,62 @@
 		\label{tab:grenzfrequnzen_hp_tp_vorausberechnung}
    	  \end{table}
    	  
-   	  \newpage
+   	  \noindent Geringe Messabweichungen ergeben sich zunächst aus dem Messgraphen des Audioanalyzers, da der Cursor nicht immer auf genau -3dB eingestellt werden kann, die Messpunkte des Messgeräts variieren. Zudem haben die verwendeten Widerstände nur idealer Weise die nominalen Werte, diese variieren auch. Mit Abweichungen von maximal $2,23$\% kann von einer relativ guten Messung ausgegangen werden.
+   	  
 
 \subsubsection{Mittenfrequenz/Sperrfrequenz des Bandpasses/der Bandsperre}
-\noindent Die gemessenen Frequenzen wurden zusammen mit den vorausberechneten Werten in einer Tabelle dargestellt und anschließend verglichen.
+\noindent Die gemessenen Frequenzen werden zusammen mit den vorausberechneten Werten in einer Tabelle dargestellt und anschließend verglichen. Im folgenden wird $f_m$ die Mittenfrequenz sein und $f_s$ die Sperrfrequenz.
 
 		\begin{table}[h]
 			\centering
 			\resizebox{\textwidth}{!}{
-			\begin{tabular}{c|c|c|c|c}
-							& Mittenfreq$_{rech}$	& Mittenfreq$_{mess}$	& Sperrfreq$_{rech}$& Sperrfreq$_{mess}$\\
+			\begin{tabular}{c|c|c|c|c|c|c|c|c|}
+							& $f_{m,rech}$	& $f_{m,mess}$	& $\Delta f_m$	& $\Delta f_m$ [\%]	& $f_{s,rech}$	& $f_{s,mess}$	& $\Delta f_s$	& $\Delta f_s$ [\%]\\
 				\hline
-				Bandpass	& $1.556kHz$			& $1.591kHz$			& -					& -					\\
+				Bandpass	& $1.556kHz$	& $1.591kHz$	& $35Hz$		& $2,25$			& - 			& - 			& - 		& - \\
 				\hline
-				Bandsperre& -						& -						& $1.568kHz$		& $1.592kHz$		\\   
+				Bandsperre	& -				& -				& - 			& - 				& $1.568kHz$	& $1.592kHz$	& $24Hz$ & $1,53$\\   
 			\end{tabular}
 			}
 			\caption{Vergleich der Werte, Bandpass und Bandsperre}
 			\label{tab:grenzfrequnzen_bs_bp_vorausberechnung}
 		\end{table}
 		
+		\noindent Auch hier ergeben sich die geringen Abweichungen durch die zuvor beschriebenen Umstände.
+		
 \newpage
 
-\subsubsection{Gemessenen Frequenzen bei einer Phasenverschiebung der Tiefpässe}
-\noindent Die gemessenen Frequenzen wurden in einer Tabelle dargestellt und anschließend verglichen.
+\subsubsection{Gemessenen Frequenzen bei einer Phasenverschiebung}
+\noindent Die gemessenen Frequenzen bei gewählten Phasenverschiebungen werden in einer Tabelle dargestellt und anschließend mit den errechneten Werten verglichen. Die folgenden Messungen beziehen sich auf die Tiefpässe der jeweiligen Arten.
 
 		\begin{table}[h]
 			\centering
-			\begin{tabular}{c|c|c|c|c|c}
-				$ $             & $-60^\circ $ & $-120^\circ$  \\
+			\begin{tabular}{c|c|c|c|c|}
+								& $f_{mess,-60^\circ}$	& $f_{rech,-60^\circ}$	&$\Delta f_{-60^\circ}$& $\Delta f_{-60^\circ}$[\%]\\
 				\hline		
-				$Butterworth$   & $1.046kHz$   & $2.381kHz$    \\
+				Butterworth		& $1.046kHz$			&						&	&\\
 				\hline
-				$Tschebyscheff$ & $898.250kHz$ & $1.400kHz$    \\ 
+				Tschebyscheff	& $898.250kHz$			&						&	&\\ 
 				\hline
-				$Bessel$        & $1.229kHz$   & $3.225kHz$    \\
+				Bessel			& $1.229kHz$			&						&	&\\
 			\end{tabular}
-			\caption{Gemessene Frequenzen bei einer Phasenverschiebung von $-60^\circ$ und $-120^\circ$ }
-			\label{tab:phasenverschiebung_hp_tp_vorausberechnung}
+			\caption{Gemessene Frequenzen bei einer Phasenverschiebung von $-60^\circ$}
+			\label{tab:phasenverschiebung_tp_vorausberechnung_60}
+		\end{table}
+		
+		\begin{table}[h]
+			\centering
+			\begin{tabular}{c|c|c|c|c|}
+								& $f_{mess,-120^\circ}$	& $f_{rech,-120^\circ}$	&$\Delta f_{-120^\circ}$& $\Delta f_{-120^\circ}$[\%]\\
+				\hline		
+				Butterworth		& $2.381kHz$			&						&	&\\
+				\hline
+				Tschebyscheff	& $1.400kHz$			&						&	&\\ 
+				\hline
+				Bessel			& $3.225kHz$			&						&	&\\
+			\end{tabular}
+			\caption{Gemessene Frequenzen bei einer Phasenverschiebung von $-120^\circ$}
+			\label{tab:phasenverschiebung_tp_vorausberechnung_120}
 		\end{table}
 		
 \noindent Aus den bei einer bestimmten Phasenverschiebung gemessenen Frequenzen ist es möglich die Koeffizienten der drei Filterarten zu bestimmen. 
@@ -129,4 +147,12 @@ a_1 &= \frac{\Bigl(- tan(arg\underline{H}_{TP}(\Omega))\Bigr)\Bigl(1-b_1 \cdot \
 \end{table}
 
 \noindent Die Werte wurden den Oszillogrammen entnommen. Diese sind im Anhang zu finden.
-\newpage
+
+\noindent In Tabelle \ref{tab:sprungantworten_tp} fällt auf, dass bei dem Tschebyscheff Tiefpass ein relativ großer Überschwinger stattfindet. Werden die benutzten Widerstände überprüft, da diese die drei verschiedenen Schaltungen unterscheiden, kann erkannt werden, dass die Widerstände $R_a$, $R_b$, $R_c$ und $R_f$ bei jeder gleich bleiben. Der Widerstand $R_e$ ändert sich geringfügig und der Widerstand $R_d$ erfährt große Änderungen. Dadurch kann folgende Theorie aufgestellt werden: Wird der Widerstand $R_d$ erhöht, verringert sich das Überschwingen und wird dieser reduziert, erhöht sich das Überschwingen in der Sprungantwort. Diese Theorie kann mit einer Spice-Simulation bestätigt werden. Dadurch ist nun auch bekannt, dass sowie der Widerstand $R_e$ erhöht wird, das Überschwingen sich auch erhöht. Wird dieser reduziert, nimmt das Überschwingen auch ab.
+
+
+
+
+
+
+

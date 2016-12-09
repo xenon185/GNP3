@@ -1,0 +1,23 @@
+* Z:\home\uni\Github_Projects\GNP3\LTspice\Schaltung_Sprungantwort.asc
+V1 N005 0 PULSE(0 0.5 0.1m 0 0 1 1 1) AC 1.
+XU1 0 N001 N010 N011 N006 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+XU2 0 N003 N010 N011 N007 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+XU3 0 N008 N010 N011 N002 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+XU4 0 N009 N010 N011 N004 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+Ra N001 N005 3.32k
+Rb N006 N001 3.32k
+Rc N003 N006 3.32k
+Rd N007 N003 1.69k
+R1 N008 N007 10k
+C1 N002 N008 10n
+R2 N009 N002 10k
+C2 N004 N009 10n
+Rf N004 N003 3.32k
+Re N002 N001 3.09k
+Rmess N004 0 10meg
+V2 N010 0 15
+V3 N011 0 -15
+.tran 4m
+.lib UniversalOpamps2.sub
+.backanno
+.end
