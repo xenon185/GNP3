@@ -67,15 +67,47 @@
 \small{
 \begin{alignat*}{2}
 arg\underline{H}_{TP}(\Omega) &= arg(V_0) - arctan(\frac{a_1 \cdot \Omega}{1-b_1\cdot \Omega^2}) \\
-tan(arg\underline{H}_{TP}(\Omega)) &= tan(1) - \frac{a_1 \cdot \Omega}{1-b_1\cdot \Omega^2}\\
-a_1 &= \frac{\Bigl(tan(1) - tan(arg\underline{H}_{TP}(\Omega))\Bigr)\Bigl(1-b_1 \cdot \Omega^2\Bigr)}{\Omega}\\
-\frac{\Bigl(tan(1) - tan(arg\underline{H}_{TP}(\Omega_{-60^\circ}))\Bigr)\Bigl(1-b_1 \cdot \Omega_{-60^\circ}^2\Bigr)}{\Omega_{-60^\circ}} &= \frac{\Bigl(tan(1) - tan(arg\underline{H}_{TP}(\Omega_{-120^\circ}))\Bigr)\Bigl(1-b_1 \cdot \Omega_{-120^\circ}^2\Bigr)}{\Omega_{-120^\circ}}\\
-\frac{\Bigl(tan(1) - tan(-60^\circ))\Bigr)\Bigl(1-b_1 \cdot \Omega_{-60^\circ}^2\Bigr)}{\Omega_{-60^\circ}} &= \frac{\Bigl(tan(1) - tan(-120^\circ)\Bigr)\Bigl(1-b_1 \cdot \Omega_{-120^\circ}^2\Bigr)}{\Omega_{-120^\circ}}\\
-\frac{\Bigl( 3.289 \Bigr)\Bigl(1-b_1 \cdot \Omega_{-60^\circ}^2\Bigr)}{\Omega_{-60^\circ}} &= \frac{\Bigl(-0.175\Bigr)\Bigl(1-b_1 \cdot \Omega_{-120^\circ}^2\Bigr)}{\Omega_{-120^\circ}}\\
-\rightarrow b_1 &= \frac{3.289\cdot \Omega_{-120^\circ}+0.175\cdot \Omega_{-60^\circ}}
-{3.289\cdot \Omega_{-120^\circ}\cdot \Omega_{-60^\circ}^2 +0.175\cdot \Omega_{-60^\circ}\cdot \Omega_{-120^\circ}^2}
+tan(arg\underline{H}_{TP}(\Omega)) &= tan(0) - \frac{a_1 \cdot \Omega}{1-b_1\cdot \Omega^2}\\
+a_1 &= \frac{\Bigl(- tan(arg\underline{H}_{TP}(\Omega))\Bigr)\Bigl(1-b_1 \cdot \Omega^2\Bigr)}{\Omega}\\
+\frac{\Bigl(- tan(arg\underline{H}_{TP}(\Omega_{-60^\circ}))\Bigr)\Bigl(1-b_1 \cdot \Omega_{-60^\circ}^2\Bigr)}{\Omega_{-60^\circ}} &= \frac{\Bigl(- tan(arg\underline{H}_{TP}(\Omega_{-120^\circ}))\Bigr)\Bigl(1-b_1 \cdot \Omega_{-120^\circ}^2\Bigr)}{\Omega_{-120^\circ}}\\
+\frac{\Bigl(- tan(-60^\circ))\Bigr)\Bigl(1-b_1 \cdot \Omega_{-60^\circ}^2\Bigr)}{\Omega_{-60^\circ}} &= \frac{\Bigl(- tan(-120^\circ)\Bigr)\Bigl(1-b_1 \cdot \Omega_{-120^\circ}^2\Bigr)}{\Omega_{-120^\circ}}\\
+\frac{\Bigl( \sqrt{3} \Bigr)\Bigl(1-b_1 \cdot \Omega_{-60^\circ}^2\Bigr)}{\Omega_{-60^\circ}} &= \frac{\Bigl(-\sqrt{3}\Bigr)\Bigl(1-b_1 \cdot \Omega_{-120^\circ}^2\Bigr)}{\Omega_{-120^\circ}}\\
+\rightarrow b_1 &= \frac{\sqrt{3}\cdot \Omega_{-120^\circ}+\sqrt{3}\cdot \Omega_{-60^\circ}}
+{\sqrt{3}\cdot \Omega_{-120^\circ}\cdot \Omega_{-60^\circ}^2 +\sqrt{3}\cdot \Omega_{-60^\circ}\cdot \Omega_{-120^\circ}^2}
 \end{alignat*}}
 
+\newpage
+
+\noindent Anschließend es ist möglich mit einer gegebenen Frequenz und $b_1$ den Koeffizienten $a_1$ zu berechnen:
+
+\small{
+	\begin{alignat*}{2}
+	arg\underline{H}_{TP}(\Omega) &= arg(V_0) - arctan(\frac{a_1 \cdot \Omega}{1-b_1\cdot \Omega^2}) \\
+	tan(arg\underline{H}_{TP}(\Omega)) &= tan(0) - \frac{a_1 \cdot \Omega}{1-b_1\cdot \Omega^2}\\
+	\rightarrow a_1 &= \frac{\Bigl(- tan(arg\underline{H}_{TP}(\Omega))\Bigr)\Bigl(1-b_1 \cdot \Omega^2\Bigr)}{\Omega}\\
+	\end{alignat*}}
+
+\noindent Aus den Berechnungen ergeben sich folgende Ergebnisse: \\
+
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{c|c|c|c||c|c|c}
+			$ $             & $ a_{1, errechnet} $ & $ a_{1, ideal} $ & $\Delta a_1$ [\%] 
+							& $b_{1, errechnet} $ & $ b_{1, ideal} $ & $\Delta b_1$ [\%] \\
+			\hline	
+			$Butterworth$   & $1.4279$             & $1.414$          & $0.98$            
+			                & $0.9498$             & $1$              & $5.02$  \\ 	  	
+			\hline
+			$Tschebyscheff$ & $1.076$              & $1.065$          & $1.03$ 
+			                & $1.928$              & $1.931$          & $0.16$  \\  
+			\hline
+			$ Bessel$ 		& $1.353$	           & $1.362$          & $0.66$  
+			                & $0.607$              & $0.618$		  & $1.78$
+		\end{tabular}
+		\caption{Gegenüberstellung: errechnete und ideale Koeffizienten }
+		\label{tab:koeffizienten}
+	\end{table}
+	
 \newpage
 
 \subsection{Zu: Sprungantworten der Tiefpässe}
